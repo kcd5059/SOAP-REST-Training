@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring description="Promote methods from bean class class OrderSoup [in [Working copy] OrderSoup.java [in com.webage.ejb [in ejbModule [in EJBService]]]]&#x0A;  OrderSoup()&#x0A;  String orderSoup(Soup) to business interface interface OrderSoupRemote [in OrderSoupRemote.java [in com.webage.ejb.view [in ejbModule [in EJBServiceClient]]]]" flags="6" id="com.ibm.jee.ejb.refactoring.core.PromoteMethods" stamp="1531317150754"/>
-</session>

@@ -1,3 +1,0 @@
-1531317150754	Promote methods from bean class class OrderSoup [in [Working copy] OrderSoup.java [in com.webage.ejb [in ejbModule [in EJBService]]]]
-  OrderSoup()
-  String orderSoup(Soup) to business interface interface OrderSoupRemote [in OrderSoupRemote.java [in com.webage.ejb.view [in ejbModule [in EJBServiceClient]]]]

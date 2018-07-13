@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><modules>
-  <module moduleId="org.eclipse.jst.jee.server:MovieClientWebAppWAR" serverId="WebSphere Application Server traditional V8.5 at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:EJBServiceWebClient" serverId="WebSphere Application Server traditional V8.5 at localhost"/>
-</modules>

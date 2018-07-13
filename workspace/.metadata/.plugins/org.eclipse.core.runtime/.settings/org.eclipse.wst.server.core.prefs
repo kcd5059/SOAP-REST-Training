@@ -1,3 +1,0 @@
-eclipse.preferences.version=1
-module-start-timeout=300000
-runtimes=<?xml version\="1.0" encoding\="UTF-8"?><runtimes>\r\n  <runtime current_SDK_Id\="1.8_64_bundled" id\="WebSphere Application Server traditional V8.5" location\="C\:/IBM/WebSphere/AppServer" name\="WebSphere Application Server traditional V8.5" runtime-type-id\="com.ibm.ws.ast.st.runtime.v85" timestamp\="0"/>\r\n</runtimes>

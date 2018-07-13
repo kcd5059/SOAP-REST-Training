@@ -1,7 +1,0 @@
-package com.webage.beans;
-
-import java.io.Serializable;
-
-public class Soup implements Serializable {
-
-}
