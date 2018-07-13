@@ -1,0 +1,42 @@
+package com.acme.services.entities;
+
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.core.MediaType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+import com.acme.services.OrderDAO;
+
+@XmlRootElement(name="order_list")
+public class OrderList {
+	List<Order> orderList;
+
+	@XmlElement(name="order")
+	public List<Order> getOrderList() {
+		return orderList;
+	}
+
+	public void setOrderList(List<Order> orderList) {
+		this.orderList = orderList;
+	}
+	
+	@GET
+	@Path("/clients/{clientId}")
+	@Produces({MediaType.APPLICATION_XML, MediaType.TEXT_XML})
+	public OrderList getOrderHistory(@PathParam("clientId") String clientId) {
+		OrderList list = null;
+		
+		try {
+			OrderDAO dao = new OrderDAO();
+			list = dao.findOrderForOrganization(clientId);
+		} catch (Exception e) {
+			throw new WebApplicationException(e);
+		}
+	}
+}

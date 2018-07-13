@@ -1,0 +1,5 @@
+package com.webage.ejb.view;
+
+public interface OrderSoupRemote {
+
+}

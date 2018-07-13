@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="BillingApp">
+        <wb-resource deploy-path="/" source-path="/"/>
+        <dependent-module archiveName="BillingWeb.war" deploy-path="/" handle="module:/resource/BillingWeb/BillingWeb">
+            <dependent-object>Module_1251218734062</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ClientWeb.war" deploy-path="/" handle="module:/resource/ClientWeb/ClientWeb">
+            <dependent-object>Module_1251219283015</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

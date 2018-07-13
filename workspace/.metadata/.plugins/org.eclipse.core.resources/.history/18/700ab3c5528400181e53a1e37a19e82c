@@ -1,0 +1,18 @@
+package com.movie;
+
+import com.mycom.movie.MovieType;
+
+public class StandaloneMovieClient {
+
+	public static void main(String[] args) {
+		
+		MovieType movie = new MovieType();
+		movie.setTitle("The Big Lebowski");
+		movie.setRating("PG-13");
+		movie.setDescription("A movie about The Dude");
+		movie.getActor().add("Jeff Bridges");
+		movie.getActor().add("John Goodman");
+		movie.getActor().add("Steve Buscemi");
+	}
+
+}

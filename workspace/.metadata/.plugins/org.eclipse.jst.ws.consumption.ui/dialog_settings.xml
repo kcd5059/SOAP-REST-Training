@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.jst.ws.client.type.java">
+		<item value="http://localhost:9080/EJBService_HTTPRouter/OrderSoupService?WSDL"/>
+		<item value="http://localhost:9080/WebServiceProjectWAR/MovieService?WSDL"/>
+	</list>
+</section>

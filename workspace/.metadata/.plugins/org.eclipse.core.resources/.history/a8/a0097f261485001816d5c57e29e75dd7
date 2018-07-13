@@ -1,0 +1,11 @@
+package com.webage.ejb;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.ws.WebFault;
+
+@WebFault(name="BadCustomer")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class BadCustomerException extends Exception {
+
+}

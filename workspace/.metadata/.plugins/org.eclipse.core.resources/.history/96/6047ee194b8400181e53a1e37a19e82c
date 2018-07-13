@@ -1,0 +1,13 @@
+package com.simple;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+@WebService(targetNamespace="www.example.org")
+public class Greeter {
+
+	@WebMethod
+	public String sayHello(@WebParam(name="greet_name") String name) {
+		return "Hello, " + name;
+	}
+}

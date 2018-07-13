@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rational.test.lt.models.wscore.configuration:WSDLInformationContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rational.test.lt.models.wscore.configuration="http:///com/ibm/rational/test/lt/models/wscore/configuration.ecore">
+  <securityOperationConfiguration>
+    <SecurityPortConfiguration aliasName="DEFAULTCONFIGURATION"/>
+  </securityOperationConfiguration>
+  <keyStore/>
+  <wsdl name="OrderSoupService" key="OrderSoupService">
+    <SimpleProperty value="http://ejb.webage.com/" name="WSDLPROPERTY_TARGETNAMESPACE"/>
+    <SimpleProperty value="314458db0588a7637ecf816808726b28db57a777314458db0588a7637ecf816808726b28db57a777bfd5ef9c856bbd2810d3e8e6f9c351ffb6d36478" name="WSDLPROPERTY_HASH"/>
+    <SimpleProperty value="1531318487168" name="WSDLPROPERTY_SYNCHROSTAMP"/>
+    <ResourceProxy portablePath="/GSC Store/1531318487058/localhost.OrderSoupService.9080.wsdl" timeStamp="1531318487168"/>
+    <WsdlInformationContainer versionContainer="9.0"/>
+    <WsdlBinding name="OrderSoupPortBinding">
+      <SimpleProperty value="SoapDocumentBinding" name="WSDLBINDINGPROPERTY_TYPE"/>
+      <SimpleProperty value="http://schemas.xmlsoap.org/soap/http" name="WSDLBINDINGPROPERTY_TRANSPORT_TYPE"/>
+      <SimpleProperty value="true" name="Soap11Binding"/>
+      <SimpleProperty value="false" name="Soap12Binding"/>
+      <SimpleProperty value="false" name="HttpBinding"/>
+      <SimpleProperty value="{http://ejb.webage.com/}OrderSoup" name="WSDLBINDING_SERVICE_NAME"/>
+      <WsdlOperation name="orderSoup" key="orderSoup">
+        <WsdlPort name="OrderSoupPort" uniqueID="-1453811612SEPARATORfd853e1b-a492-4dd5-b7dc-950321dec207">
+          <SimpleProperty value="http://localhost:9080/EJBService_HTTPRouter/OrderSoupService" name="WSDLPORTPROPERTY_HTTP_URL"/>
+          <in>
+            <SimpleProperty value="DEFAULTCONFIGURATION" name="operation_security_information"/>
+          </in>
+          <out>
+            <SimpleProperty value="DEFAULTCONFIGURATION" name="operation_security_information"/>
+          </out>
+        </WsdlPort>
+        <in>
+          <SimpleProperty value="http://ejb.webage.com/OrderSoup/orderSoupRequest" name="WSADDRESSING_ACTIVATOR"/>
+          <SimpleProperty value="literal" name="WSDLOPERATIONPROPERTY_ENCODING_STYLE"/>
+          <WsdlPart element="true" nameSpaceURI="http://ejb.webage.com/" localPart="orderSoup" partName="parameters"/>
+        </in>
+        <SimpleProperty value="true" name="WSDLOPERATIONPROPERTY_SOAP_ACTION_REQUIRED"/>
+        <SimpleProperty value="" name="WSDLOPERATIONPROPERTY_SOAP_ACTION_URI"/>
+        <out>
+          <SimpleProperty value="http://ejb.webage.com/OrderSoup/orderSoupResponse" name="WSADDRESSING_ACTIVATOR"/>
+          <SimpleProperty value="literal" name="WSDLOPERATIONPROPERTY_ENCODING_STYLE"/>
+          <SimpleProperty name="MESSAGENAME"/>
+          <WsdlPart element="true" nameSpaceURI="http://ejb.webage.com/" localPart="orderSoupResponse" partName="parameters"/>
+        </out>
+      </WsdlOperation>
+    </WsdlBinding>
+  </wsdl>
+</com.ibm.rational.test.lt.models.wscore.configuration:WSDLInformationContainer>

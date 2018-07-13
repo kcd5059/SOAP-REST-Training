@@ -1,0 +1,24 @@
+package com.mycom.movie;
+
+
+
+@javax.jws.WebService (endpointInterface="com.mycom.movie.MovieService", targetNamespace="http://www.mycom.com/movie", serviceName="MovieService", portName="MovieServiceSOAPPort")
+public class Movie_serviceSOAPImpl{
+
+    public String addMovie(MovieType movie) {
+        System.out.println("Recieved a movie:");
+        System.out.println("Title: " + movie.getTitle());
+        System.out.println("Rating: " + movie.getRating());
+        
+        List<String> actors = movie.getActor();
+        
+        for(String actor : actors) {
+        	System.out.println("Actor: " + actor);
+        }
+        
+        System.out.println("Description: " + movie.getDescription());
+        System.out.println("Successfully added movie " + movie.getTitle());
+        return null;
+    }
+
+}

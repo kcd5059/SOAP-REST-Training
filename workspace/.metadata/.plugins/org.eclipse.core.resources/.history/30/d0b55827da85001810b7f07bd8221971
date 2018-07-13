@@ -1,0 +1,35 @@
+package com.acme.services;
+
+import java.util.logging.Logger;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+
+@Path("/simple/{myRootPathData}")
+public class SimpleService {
+	
+	@PathParam("myRootPathData")
+	String rootPathData;
+	
+	Logger logger = Logger.getLogger("SimpleService");
+	
+	@GET
+	@Produces("text/plain")
+	public String testGET() {
+		logger.info("Got a GET request with root path data: " + rootPathData);
+		
+		return "OK";
+	}
+	
+	@GET
+	@Produces("text/plain")
+	@Path("/mypath")
+	public String testGetWithPath() {
+		logger.info("Got a GET request with path extension.");
+		
+		return "OK";
+	}
+
+}

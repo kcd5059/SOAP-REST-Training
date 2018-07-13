@@ -1,0 +1,9 @@
+package com.webage.ejb.view;
+
+import com.webage.beans.Soup;
+
+public interface OrderSoupRemote {
+
+	String orderSoup(Soup soup);
+
+}

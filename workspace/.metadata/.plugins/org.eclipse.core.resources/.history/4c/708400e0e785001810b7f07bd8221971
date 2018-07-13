@@ -1,0 +1,38 @@
+package com.acme.services.entities;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name="quote_request")
+public class QuoteRequest {
+	
+	String partNumber;
+	int quantity;
+	String clientId;
+	String dateRequiredBy;
+	
+	public String getPartNumber() {
+		return partNumber;
+	}
+	public void setPartNumber(String partNumber) {
+		this.partNumber = partNumber;
+	}
+	public int getQuanity() {
+		return quantity;
+	}
+	public void setQuanity(int quanity) {
+		this.quantity = quanity;
+	}
+	public String getClientId() {
+		return clientId;
+	}
+	public void setClientId(String clientId) {
+		this.clientId = clientId;
+	}
+	public String getDataRequiredBy() {
+		return dateRequiredBy;
+	}
+	public void setDataRequiredBy(String dataRequiredBy) {
+		this.dateRequiredBy = dataRequiredBy;
+	}
+	
+}

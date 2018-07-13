@@ -1,0 +1,22 @@
+package com.acme.services;
+
+import java.util.logging.Logger;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+@Path("/simple")
+public class SimpleService {
+	
+	Logger logger = Logger.getLogger("SimpleService");
+	
+	@GET
+	@Produces("text/plain")
+	public String testGET() {
+		logger.info("Got a GET request");
+		
+		return "OK";
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.acme.services;
+
+public class SimpleService {
+
+}

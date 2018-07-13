@@ -1,0 +1,20 @@
+@REM C:\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\quickServerStart.bat
+@REM Generated: Wed Jul 11 10:13:46 EDT 2018
+
+@setlocal
+@echo off
+
+@REM Bootstrap values ...
+cd C:\IBM\WebSphere\AppServer\profiles\AppSrv01\bin
+call "C:\IBM\WebSphere\AppServer\profiles\AppSrv01\bin\setupCmdLine.bat"
+@REM For debugging the server process:
+@REM set DEBUG=-Djava.compiler=NONE -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7777
+
+@REM Environment Settings
+SET PATH=%WAS_PATH%
+
+
+@REM Launch Command
+"C:\IBM\WebSphere\AppServer/java/bin/java"  %DEBUG% "-Dosgi.install.area=C:\IBM\WebSphere\AppServer" "-Dosgi.configuration.area=C:\IBM\WebSphere\AppServer\profiles\AppSrv01/servers/server1/configuration" "-Dosgi.framework.extensions=com.ibm.cds,com.ibm.ws.eclipse.adaptors" "-Xshareclasses:name=webspherev85_1.8_64_bundled,nonFatal" "-Dsun.reflect.inflationThreshold=250" "-Dcom.ibm.xtq.processor.overrideSecureProcessing=true" "-Djava.security.properties=C:\IBM\WebSphere\AppServer/properties/java.security" "-Xbootclasspath/p:C:\IBM\WebSphere\AppServer/java/jre/lib/ibmorb.jar" "-classpath" "C:\IBM\WebSphere\AppServer\profiles\AppSrv01/properties;C:\IBM\WebSphere\AppServer/properties;C:\IBM\WebSphere\AppServer/lib/startup.jar;C:\IBM\WebSphere\AppServer/lib/bootstrap.jar;C:\IBM\WebSphere\AppServer/lib/jsf-nls.jar;C:\IBM\WebSphere\AppServer/lib/lmproxy.jar;C:\IBM\WebSphere\AppServer/lib/urlprotocols.jar;C:\IBM\WebSphere\AppServer/deploytool/itp/batchboot.jar;C:\IBM\WebSphere\AppServer/deploytool/itp/batch2.jar;C:\IBM\WebSphere\AppServer/java/lib/tools.jar" "-Dibm.websphere.internalClassAccessMode=allow" "-Xms50m" "-Xmx512m" "-Xcompressedrefs" "-Xscmaxaot8M" "-Xscmx60M" "-Xquickstart" "-Dws.ext.dirs=C:\IBM\WebSphere\AppServer/java/lib;C:\IBM\WebSphere\AppServer\profiles\AppSrv01/classes;C:\IBM\WebSphere\AppServer/classes;C:\IBM\WebSphere\AppServer/lib;C:\IBM\WebSphere\AppServer/installedChannels;C:\IBM\WebSphere\AppServer/lib/ext;C:\IBM\WebSphere\AppServer/web/help;C:\IBM\WebSphere\AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime" "-Dderby.system.home=C:\IBM\WebSphere\AppServer/derby" "-Dcom.ibm.itp.location=C:\IBM\WebSphere\AppServer/bin" "-Djava.util.logging.configureByServer=true" "-Duser.install.root=C:\IBM\WebSphere\AppServer\profiles\AppSrv01" "-Djava.ext.dirs=C:\IBM\WebSphere\AppServer/tivoli/tam;C:\IBM\WebSphere\AppServer/java/jre/lib/ext" "-Djavax.management.builder.initial=com.ibm.ws.management.PlatformMBeanServerBuilder" "-Dpython.cachedir=C:\IBM\WebSphere\AppServer\profiles\AppSrv01/temp/cachedir" "-Dwas.install.root=C:\IBM\WebSphere\AppServer" "-Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager" "-Dserver.root=C:\IBM\WebSphere\AppServer\profiles\AppSrv01" "-Dcom.ibm.security.jgss.debug=off" "-Dcom.ibm.security.krb5.Krb5Debug=off" "-Dcom.ibm.ws.management.event.pull_notification_timeout=120000" "-Xquickstart" "-Dcom.ibm.xml.xlxp.jaxb.opti.level=3" "-Djava.library.path=C:\IBM\WebSphere\AppServer/lib/native/win/x86_64/;C:\IBM\WebSphere\AppServer\java\jre\bin\compressedrefs;C:\IBM\WebSphere\AppServer\java\jre\bin;C:\Windows\system32;C:\Windows;C:\IBM\WebSphere\AppServer\lib\native\win\x86_64;C:\IBM\WebSphere\AppServer\bin;C:\IBM\WebSphere\AppServer\java\bin;C:\IBM\WebSphere\AppServer\java\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Progra~1\Java\jdk1.8.0_171\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;.;" "-Djava.endorsed.dirs=C:\IBM\WebSphere\AppServer/endorsed_apis;C:\IBM\WebSphere\AppServer/java/jre/lib/endorsed;C:\IBM\WebSphere\AppServer\endorsed_apis;C:\IBM\WebSphere\AppServer\java\jre\lib\endorsed" "-Djava.security.auth.login.config=C:\IBM\WebSphere\AppServer\profiles\AppSrv01/properties/wsjaas.conf" "-Djava.security.policy=C:\IBM\WebSphere\AppServer\profiles\AppSrv01/properties/server.policy" "com.ibm.wsspi.bootstrap.WSPreLauncher" "-nosplash" "-application" "com.ibm.ws.bootstrap.WSLauncher" "com.ibm.ws.runtime.WsServer" "C:\IBM\WebSphere\AppServer\profiles\AppSrv01\config" "LABPCNode01Cell" "LABPCNode01" "server1"
+
+@endlocal

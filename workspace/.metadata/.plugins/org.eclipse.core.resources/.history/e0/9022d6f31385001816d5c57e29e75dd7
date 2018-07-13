@@ -1,0 +1,5 @@
+package com.webage.ejb;
+
+public class BadCustomerException extends Exception {
+
+}

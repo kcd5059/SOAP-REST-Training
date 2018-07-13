@@ -1,0 +1,27 @@
+package com.acme.services;
+
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+import org.eclipse.jem.util.logger.proxy.Logger;
+
+import com.acme.services.entities.QuoteRequest;
+import com.acme.services.entities.QuoteResponse;
+
+@Path("/quotes")
+public class QuoteService {
+	
+	@POST
+	@Produces("text/html")
+	public QuoteResponse getQuote(QuoteRequest req) {
+		Logger logger = Logger.getLogger("QuoteService");
+		
+		QuoteResponse res = new QuoteResponse();
+		res.setClientId(req.getClientId());
+		res.setDateRequiredBy(req.getDataRequiredBy());
+		res.setPartNumber(req.getPartNumber());
+		res.setQuantity(req.getQuantity());
+	}
+	
+}
